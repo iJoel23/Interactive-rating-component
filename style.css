@@ -1,0 +1,147 @@
+/*
+  1. Reset:
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+/* 2. Styles: */
+body {
+  background: hsl(216, 12%, 8%);
+  display: grid;
+  place-content: center;
+  font-family: "Overpass", sans-serif;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img,
+p,
+.rate__container {
+  margin-bottom: 1.4em;
+}
+.card__container-1,
+.card__container-2 {
+  background: hsl(213, 19%, 18%);
+  border-radius: 1.2em;
+  max-width: 350px;
+  padding: 1.5em;
+  margin: 1.5em;
+}
+.card__title {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+.card__text {
+  color: hsl(217, 12%, 63%);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.card__container-2 > * {
+  text-align: center;
+}
+.card__img-edit {
+  padding: 1em;
+}
+.card__img-edit,
+.btn__rate {
+  background: hsl(216, 12%, 30%);
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+}
+.btn__rate {
+  color: hsl(217, 12%, 63%);
+  width: 3em;
+  height: 3em;
+  padding-top: 0.2em;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn__rate:hover {
+  background: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+.btn__rate:focus {
+  background: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+.btn__submit {
+  background: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 2em;
+  padding: 0.7em;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  letter-spacing: 2px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn__submit:hover {
+  color: hsl(25, 97%, 53%);
+  background: hsl(0, 0%, 100%);
+}
+.btn__submit:focu {
+  color: hsl(25, 97%, 53%);
+  background: hsl(0, 0%, 100%);
+}
+.card__result {
+  background: hsl(216, 12%, 30%);
+  color: hsl(25, 97%, 53%);
+  padding: 0.4em 0.6em;
+  border-radius: 2em;
+}
+.hidden {
+  display: none;
+}
